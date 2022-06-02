@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/parallels/catkin_go_chase_it_ws/devel/setup.sh
