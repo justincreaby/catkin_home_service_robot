@@ -43,13 +43,6 @@
 /home/parallels/catkin_where_am_i/build/my_robot/CMakeFiles/edit_cache.dir
 /home/parallels/catkin_where_am_i/build/my_robot/CMakeFiles/test.dir
 /home/parallels/catkin_where_am_i/build/my_robot/CMakeFiles/_catkin_empty_exported_target.dir
-/home/parallels/catkin_where_am_i/build/teleop_twist_keyboard/CMakeFiles/install/strip.dir
-/home/parallels/catkin_where_am_i/build/teleop_twist_keyboard/CMakeFiles/install/local.dir
-/home/parallels/catkin_where_am_i/build/teleop_twist_keyboard/CMakeFiles/install.dir
-/home/parallels/catkin_where_am_i/build/teleop_twist_keyboard/CMakeFiles/list_install_components.dir
-/home/parallels/catkin_where_am_i/build/teleop_twist_keyboard/CMakeFiles/rebuild_cache.dir
-/home/parallels/catkin_where_am_i/build/teleop_twist_keyboard/CMakeFiles/edit_cache.dir
-/home/parallels/catkin_where_am_i/build/teleop_twist_keyboard/CMakeFiles/test.dir
 /home/parallels/catkin_where_am_i/build/ball_chaser/CMakeFiles/install.dir
 /home/parallels/catkin_where_am_i/build/ball_chaser/CMakeFiles/list_install_components.dir
 /home/parallels/catkin_where_am_i/build/ball_chaser/CMakeFiles/edit_cache.dir
