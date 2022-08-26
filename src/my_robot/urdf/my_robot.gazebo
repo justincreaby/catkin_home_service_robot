@@ -19,7 +19,7 @@
   </gazebo>
 
   <!-- camera -->
-  <gazebo reference="camera">
+  <!--gazebo reference="camera">
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>
       <camera name="head">
@@ -49,7 +49,7 @@
         <distortionT2>0.0</distortionT2>
       </plugin>
     </sensor>
-  </gazebo>
+  </gazebo-->
 
   <!-- hokuyo -->
   <gazebo reference="hokuyo">
