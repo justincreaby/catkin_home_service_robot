@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parallels/catkin_go_chase_it_ws/src
+CMAKE_SOURCE_DIR = /home/parallels/catkin_where_am_i/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parallels/catkin_go_chase_it_ws/build
+CMAKE_BINARY_DIR = /home/parallels/catkin_where_am_i/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ my_robot/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty_expor
 .PHONY : my_robot/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 my_robot/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/parallels/catkin_go_chase_it_ws/build/my_robot && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/parallels/catkin_where_am_i/build/my_robot && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : my_robot/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 my_robot/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/parallels/catkin_go_chase_it_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/catkin_go_chase_it_ws/src /home/parallels/catkin_go_chase_it_ws/src/my_robot /home/parallels/catkin_go_chase_it_ws/build /home/parallels/catkin_go_chase_it_ws/build/my_robot /home/parallels/catkin_go_chase_it_ws/build/my_robot/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/parallels/catkin_where_am_i/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/catkin_where_am_i/src /home/parallels/catkin_where_am_i/src/my_robot /home/parallels/catkin_where_am_i/build /home/parallels/catkin_where_am_i/build/my_robot /home/parallels/catkin_where_am_i/build/my_robot/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : my_robot/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

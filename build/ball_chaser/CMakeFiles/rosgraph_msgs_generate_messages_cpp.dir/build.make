@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parallels/catkin_go_chase_it_ws/src
+CMAKE_SOURCE_DIR = /home/parallels/catkin_where_am_i/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parallels/catkin_go_chase_it_ws/build
+CMAKE_BINARY_DIR = /home/parallels/catkin_where_am_i/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ ball_chaser/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build: rosgraph_m
 .PHONY : ball_chaser/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 
 ball_chaser/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	cd /home/parallels/catkin_go_chase_it_ws/build/ball_chaser && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/parallels/catkin_where_am_i/build/ball_chaser && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : ball_chaser/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 ball_chaser/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend:
-	cd /home/parallels/catkin_go_chase_it_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/catkin_go_chase_it_ws/src /home/parallels/catkin_go_chase_it_ws/src/ball_chaser /home/parallels/catkin_go_chase_it_ws/build /home/parallels/catkin_go_chase_it_ws/build/ball_chaser /home/parallels/catkin_go_chase_it_ws/build/ball_chaser/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/parallels/catkin_where_am_i/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/catkin_where_am_i/src /home/parallels/catkin_where_am_i/src/ball_chaser /home/parallels/catkin_where_am_i/build /home/parallels/catkin_where_am_i/build/ball_chaser /home/parallels/catkin_where_am_i/build/ball_chaser/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ball_chaser/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
 

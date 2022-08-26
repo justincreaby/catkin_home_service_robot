@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "my_robot"
-PROJECT_SPACE_DIR = "/home/parallels/catkin_go_chase_it_ws/install"
+PROJECT_SPACE_DIR = "/home/parallels/catkin_where_am_i/install"
 PROJECT_VERSION = "0.0.0"

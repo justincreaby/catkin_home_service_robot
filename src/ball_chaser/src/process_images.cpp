@@ -58,7 +58,7 @@ void process_image_callback(const sensor_msgs::Image img)
 
     if (has_white_pixel)
     {
-      ROS_INFO("Has Ball: leftSide = %d, rightSide = %d, size = %d, pos = %d", left_white_pixel_position, right_white_pixel_position, ball_size, ball_position);
+      //ROS_INFO("Has Ball: leftSide = %d, rightSide = %d, size = %d, pos = %d", left_white_pixel_position, right_white_pixel_position, ball_size, ball_position);
       
       float speed = 0.0;
       float turnDir = 0.0;
@@ -93,7 +93,7 @@ void process_image_callback(const sensor_msgs::Image img)
     }
     else
     {
-      ROS_INFO("No Ball");
+      //ROS_INFO("No Ball");
       drive_robot(0.0, 0.0);
     }
     // TODO: Loop through each pixel in the image and check if there's a bright white one

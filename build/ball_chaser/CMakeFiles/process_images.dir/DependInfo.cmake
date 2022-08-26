@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/parallels/catkin_go_chase_it_ws/src/ball_chaser/src/process_images.cpp" "/home/parallels/catkin_go_chase_it_ws/build/ball_chaser/CMakeFiles/process_images.dir/src/process_images.cpp.o"
+  "/home/parallels/catkin_where_am_i/src/ball_chaser/src/process_images.cpp" "/home/parallels/catkin_where_am_i/build/ball_chaser/CMakeFiles/process_images.dir/src/process_images.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/parallels/catkin_go_chase_it_ws/devel/include"
-  "/home/parallels/catkin_go_chase_it_ws/src/ball_chaser/include"
+  "/home/parallels/catkin_where_am_i/devel/include"
+  "/home/parallels/catkin_where_am_i/src/ball_chaser/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

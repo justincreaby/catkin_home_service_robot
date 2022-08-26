@@ -3,7 +3,6 @@
 <launch>
 
   <!-- World File -->
-  <!--arg name="world_file" default="$(find my_robot)/worlds/projectWorld.world"/-->
   <arg name="world_file" default="$(find my_robot)/worlds/justins.world"/>
 
   <!-- Launch Gazebo World -->
@@ -36,5 +35,9 @@
               -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
 
   <!--launch rviz-->
-  <!--node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find ball_chaser)/rviz/goChaseIt.rviz"/-->
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find my_robot)/rviz/where_am_i.rviz"/>
+  
+  <!-- TeleOp Keyboard -->
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop"/>
+
 </launch>

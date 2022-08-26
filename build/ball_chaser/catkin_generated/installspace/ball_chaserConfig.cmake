@@ -67,14 +67,14 @@ set(ball_chaser_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(ball_chaser_SOURCE_PREFIX /home/parallels/catkin_go_chase_it_ws/src/ball_chaser)
-  set(ball_chaser_DEVEL_PREFIX /home/parallels/catkin_go_chase_it_ws/devel)
+  set(ball_chaser_SOURCE_PREFIX /home/parallels/catkin_where_am_i/src/ball_chaser)
+  set(ball_chaser_DEVEL_PREFIX /home/parallels/catkin_where_am_i/devel)
   set(ball_chaser_INSTALL_PREFIX "")
   set(ball_chaser_PREFIX ${ball_chaser_DEVEL_PREFIX})
 else()
   set(ball_chaser_SOURCE_PREFIX "")
   set(ball_chaser_DEVEL_PREFIX "")
-  set(ball_chaser_INSTALL_PREFIX /home/parallels/catkin_go_chase_it_ws/install)
+  set(ball_chaser_INSTALL_PREFIX /home/parallels/catkin_where_am_i/install)
   set(ball_chaser_PREFIX ${ball_chaser_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/parallels/catkin_go_chase_it_ws/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/parallels/catkin_where_am_i/install/lib;/home/parallels/catkin_where_am_i/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
