@@ -1,4 +1,4 @@
-prefix=/home/parallels/catkin_where_am_i/devel
+prefix=/home/justincreaby/catkin_where_am_i/devel
 
 Name: my_robot
 Description: Description of my_robot
