@@ -67,14 +67,14 @@ set(my_robot_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(my_robot_SOURCE_PREFIX /home/justincreaby/catkin_where_am_i/src/my_robot)
-  set(my_robot_DEVEL_PREFIX /home/justincreaby/catkin_where_am_i/devel)
+  set(my_robot_SOURCE_PREFIX /home/parallels/catkin_where_am_i/src/my_robot)
+  set(my_robot_DEVEL_PREFIX /home/parallels/catkin_where_am_i/devel)
   set(my_robot_INSTALL_PREFIX "")
   set(my_robot_PREFIX ${my_robot_DEVEL_PREFIX})
 else()
   set(my_robot_SOURCE_PREFIX "")
   set(my_robot_DEVEL_PREFIX "")
-  set(my_robot_INSTALL_PREFIX /home/justincreaby/catkin_where_am_i/install)
+  set(my_robot_INSTALL_PREFIX /home/parallels/catkin_where_am_i/install)
   set(my_robot_PREFIX ${my_robot_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/justincreaby/catkin_where_am_i/install/lib;/home/justincreaby/catkin_where_am_i/devel/lib;/home/justincreaby/catkin_pgm/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/parallels/catkin_where_am_i/install/lib;/home/parallels/catkin_where_am_i/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(my_robot_LIBRARIES ${my_robot_LIBRARIES})
 
   _list_append_unique(my_robot_LIBRARY_DIRS ${${my_robot_dep}_LIBRARY_DIRS})
-  list(APPEND my_robot_EXPORTED_TARGETS ${${my_robot_dep}_EXPORTED_TARGETS})
+  _list_append_deduplicate(my_robot_EXPORTED_TARGETS ${${my_robot_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")
