@@ -3,7 +3,7 @@
   <!-- TODO: Add nodes here -->
 
   <!-- Map Server -->
-  <arg name="map_file" default="$(find my_robot)/maps/myoffice.yaml"/>
+  <arg name="map_file" default="$(find my_robot)/maps/justinMap.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
   <!-- AMCL Node -->

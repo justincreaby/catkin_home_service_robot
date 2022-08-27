@@ -1,55 +1,58 @@
-Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/justincreaby/catkin_where_am_i/build/CMakeFiles/CMakeTmp
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/parallels/catkin_where_am_i/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_540c1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_540c1.dir/build.make CMakeFiles/cmTC_540c1.dir/build
-make[1]: Entering directory '/home/justincreaby/catkin_where_am_i/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_540c1.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_540c1.dir/CheckSymbolExists.c.o   -c /home/justincreaby/catkin_where_am_i/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_540c1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_540c1.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_540c1.dir/CheckSymbolExists.c.o  -o cmTC_540c1 -rdynamic 
-CMakeFiles/cmTC_540c1.dir/CheckSymbolExists.c.o: In function `main':
-CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+Run Build Command(s):/usr/bin/make cmTC_4a76c/fast && /usr/bin/make -f CMakeFiles/cmTC_4a76c.dir/build.make CMakeFiles/cmTC_4a76c.dir/build
+make[1]: Entering directory '/home/parallels/catkin_where_am_i/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a76c.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_4a76c.dir/src.c.o   -c /home/parallels/catkin_where_am_i/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4a76c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a76c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_4a76c.dir/src.c.o  -o cmTC_4a76c 
+/usr/bin/ld: CMakeFiles/cmTC_4a76c.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_540c1.dir/build.make:97: recipe for target 'cmTC_540c1' failed
-make[1]: *** [cmTC_540c1] Error 1
-make[1]: Leaving directory '/home/justincreaby/catkin_where_am_i/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_540c1/fast' failed
-make: *** [cmTC_540c1/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_4a76c.dir/build.make:87: cmTC_4a76c] Error 1
+make[1]: Leaving directory '/home/parallels/catkin_where_am_i/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4a76c/fast] Error 2
 
-File /home/justincreaby/catkin_where_am_i/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
+
+Source file was:
 #include <pthread.h>
 
-int main(int argc, char** argv)
+void* test_func(void* data)
 {
-  (void)argv;
-#ifndef pthread_create
-  return ((int*)(&pthread_create))[argc];
-#else
-  (void)argc;
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
   return 0;
-#endif
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/justincreaby/catkin_where_am_i/build/CMakeFiles/CMakeTmp
+Change Dir: /home/parallels/catkin_where_am_i/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_602dd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_602dd.dir/build.make CMakeFiles/cmTC_602dd.dir/build
-make[1]: Entering directory '/home/justincreaby/catkin_where_am_i/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_602dd.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_602dd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_602dd
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_602dd.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_602dd.dir/CheckFunctionExists.c.o  -o cmTC_602dd -rdynamic -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_10db9/fast && /usr/bin/make -f CMakeFiles/cmTC_10db9.dir/build.make CMakeFiles/cmTC_10db9.dir/build
+make[1]: Entering directory '/home/parallels/catkin_where_am_i/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10db9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_10db9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_10db9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10db9.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_10db9.dir/CheckFunctionExists.c.o  -o cmTC_10db9  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_602dd.dir/build.make:97: recipe for target 'cmTC_602dd' failed
-make[1]: *** [cmTC_602dd] Error 1
-make[1]: Leaving directory '/home/justincreaby/catkin_where_am_i/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_602dd/fast' failed
-make: *** [cmTC_602dd/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_10db9.dir/build.make:87: cmTC_10db9] Error 1
+make[1]: Leaving directory '/home/parallels/catkin_where_am_i/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_10db9/fast] Error 2
+
 
 
