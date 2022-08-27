@@ -1,7 +1,5 @@
 <?xml version="1.0"?>
 <launch>
-  <!-- TODO: Add nodes here -->
-
   <!-- Map Server -->
   <arg name="map_file" default="$(find my_robot)/maps/justinMap.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
@@ -36,6 +34,18 @@
     <param name="odom_alpha3" value="0.02"/>
     <param name="odom_alpha4" value="0.02"/>
     <param name="odom_alpha5" value="0.02"/>
+  </node>
+
+  <!-- Move Base -->
+  <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
+    <param name="base_global_planner" value="navfn/NavfnROS" />
+    <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
+    
+    <rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find my_robot)/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find my_robot)/config/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find my_robot)/config/base_local_planner_params.yaml" command="load" />
   </node>
 
 </launch>
