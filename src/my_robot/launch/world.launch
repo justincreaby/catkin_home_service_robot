@@ -2,6 +2,17 @@
 
 <launch>
 
+  <!-- Robot pose -->
+  <arg name="x" default="0"/>
+  <arg name="y" default="0"/>
+  <arg name="z" default="0"/>
+  <arg name="roll" default="0"/>
+  <arg name="pitch" default="0"/>
+  <arg name="yaw" default="1.57070"/>
+
+  <!-- Launch other relevant files-->
+  <include file="$(find my_robot)/launch/robot_description.launch"/>
+
   <!-- World File -->
   <arg name="world_file" default="$(find my_robot)/worlds/justins.world"/>
 
@@ -13,18 +24,6 @@
     <arg name="world_name" value="$(arg world_file)"/>
   </include>
 
-  <!-- Robot pose -->
-  <arg name="x" default="0"/>
-  <arg name="y" default="0"/>
-  <arg name="z" default="0"/>
-  <arg name="roll" default="0"/>
-  <arg name="pitch" default="0"/>
-  <arg name="yaw" default="1.57070"/>
-
-  <!-- Launch other relevant files-->
-  <include file="$(find my_robot)/launch/robot_description.launch"/>
-  <!--include file="$(find ball_chaser)/launch/ball_chaser.launch"/-->
-
   <!-- Find my robot Description-->
   <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find my_robot)/urdf/my_robot.xacro'"/>
 
@@ -35,9 +34,6 @@
               -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
 
   <!--launch rviz-->
-  <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find my_robot)/rviz/where_am_i.rviz"/>
-  
-  <!-- TeleOp Keyboard -->
-  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop"/>
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find my_robot)/rviz/default.rviz"/>
 
 </launch>

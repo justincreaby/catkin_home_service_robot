@@ -2,24 +2,32 @@
 <robot>
 
   <gazebo>
-  <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
-    <updateRate>100.0</updateRate>
-    <robotNamespace>/</robotNamespace>
-    <leftFrontJoint>left_wheel_front_hinge</leftFrontJoint>
-    <rightFrontJoint>right_wheel_front_hinge</rightFrontJoint>
-    <leftRearJoint>left_wheel_back_hinge</leftRearJoint>
-    <rightRearJoint>right_wheel_back_hinge</rightRearJoint>
-    <wheelSeparation>0.6</wheelSeparation>
-    <wheelDiameter>0.2</wheelDiameter>
-    <robotBaseFrame>base_link</robotBaseFrame>
-    <torque>20</torque>
-    <topicName>cmd_vel</topicName>
-    <broadcastTF>false</broadcastTF>
-  </plugin>
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+      <legacyMode>false</legacyMode>
+      <alwaysOn>true</alwaysOn>
+      <updateRate>10</updateRate>
+      <leftJoint>left_wheel_hinge</leftJoint>
+      <rightJoint>right_wheel_hinge</rightJoint>
+      <wheelSeparation>0.5</wheelSeparation>
+      <wheelDiameter>0.2</wheelDiameter>
+      <torque>10</torque>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>robot_footprint</robotBaseFrame>
+      <publishWheelTF>false</publishWheelTF>
+      <publishWheelJointState>false</publishWheelJointState>
+      <rosDebugLevel>na</rosDebugLevel>
+      <wheelAcceleration>0</wheelAcceleration>
+      <wheelTorque>5</wheelTorque>
+      <odometrySource>world</odometrySource>
+      <publishTf>1</publishTf>
+      <publishOdomTF>true</publishOdomTF>
+    </plugin>
   </gazebo>
 
   <!-- camera -->
-  <!--gazebo reference="camera">
+  <gazebo reference="camera">
     <sensor type="camera" name="camera1">
       <update_rate>30.0</update_rate>
       <camera name="head">
@@ -49,7 +57,7 @@
         <distortionT2>0.0</distortionT2>
       </plugin>
     </sensor>
-  </gazebo-->
+  </gazebo>
 
   <!-- hokuyo -->
   <gazebo reference="hokuyo">
