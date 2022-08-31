@@ -143,6 +143,9 @@
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
 
+
+
+
   <link name='camera'>
     <pose>0 0 0 0 0 0</pose>
 
@@ -179,6 +182,18 @@
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
+
+  <joint name="camera_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
+    <parent link="camera"/>
+    <child link="camera_link_optical"/>
+  </joint>
+
+  <link name="camera_link_optical">
+  </link>
+
+
+
 
   <link name='hokuyo'>
     <pose>0 0 0 0 0 0</pose>

@@ -1,4 +1,4 @@
-prefix=/home/parallels/catkin_where_am_i/devel
+prefix=/home/parallels/catkin_map_my_world/devel
 
 Name: teleop_twist_keyboard
 Description: Description of teleop_twist_keyboard

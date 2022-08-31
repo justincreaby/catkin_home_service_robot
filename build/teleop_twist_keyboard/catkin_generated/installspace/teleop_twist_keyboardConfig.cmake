@@ -67,14 +67,14 @@ set(teleop_twist_keyboard_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(teleop_twist_keyboard_SOURCE_PREFIX /home/parallels/catkin_where_am_i/src/teleop_twist_keyboard)
-  set(teleop_twist_keyboard_DEVEL_PREFIX /home/parallels/catkin_where_am_i/devel)
+  set(teleop_twist_keyboard_SOURCE_PREFIX /home/parallels/catkin_map_my_world/src/teleop_twist_keyboard)
+  set(teleop_twist_keyboard_DEVEL_PREFIX /home/parallels/catkin_map_my_world/devel)
   set(teleop_twist_keyboard_INSTALL_PREFIX "")
   set(teleop_twist_keyboard_PREFIX ${teleop_twist_keyboard_DEVEL_PREFIX})
 else()
   set(teleop_twist_keyboard_SOURCE_PREFIX "")
   set(teleop_twist_keyboard_DEVEL_PREFIX "")
-  set(teleop_twist_keyboard_INSTALL_PREFIX /home/parallels/catkin_where_am_i/install)
+  set(teleop_twist_keyboard_INSTALL_PREFIX /home/parallels/catkin_map_my_world/install)
   set(teleop_twist_keyboard_PREFIX ${teleop_twist_keyboard_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/parallels/catkin_where_am_i/install/lib;/home/parallels/catkin_where_am_i/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/parallels/catkin_map_my_world/install/lib;/home/parallels/catkin_map_my_world/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

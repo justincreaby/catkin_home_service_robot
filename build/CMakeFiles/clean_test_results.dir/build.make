@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parallels/catkin_where_am_i/src
+CMAKE_SOURCE_DIR = /home/parallels/catkin_map_my_world/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parallels/catkin_where_am_i/build
+CMAKE_BINARY_DIR = /home/parallels/catkin_map_my_world/build
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/parallels/catkin_where_am_i/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/parallels/catkin_where_am_i/build/test_results
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/parallels/catkin_map_my_world/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/parallels/catkin_where_am_i/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/catkin_where_am_i/src /home/parallels/catkin_where_am_i/src /home/parallels/catkin_where_am_i/build /home/parallels/catkin_where_am_i/build /home/parallels/catkin_where_am_i/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/parallels/catkin_map_my_world/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/catkin_map_my_world/src /home/parallels/catkin_map_my_world/src /home/parallels/catkin_map_my_world/build /home/parallels/catkin_map_my_world/build /home/parallels/catkin_map_my_world/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

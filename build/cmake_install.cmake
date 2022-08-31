@@ -1,8 +1,8 @@
-# Install script for directory: /home/parallels/catkin_where_am_i/src
+# Install script for directory: /home/parallels/catkin_map_my_world/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parallels/catkin_where_am_i/install")
+  set(CMAKE_INSTALL_PREFIX "/home/parallels/catkin_map_my_world/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,90 +49,90 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/parallels/catkin_where_am_i/install/_setup_util.py")
+   "/home/parallels/catkin_map_my_world/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/parallels/catkin_where_am_i/install" TYPE PROGRAM FILES "/home/parallels/catkin_where_am_i/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/parallels/catkin_map_my_world/install" TYPE PROGRAM FILES "/home/parallels/catkin_map_my_world/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/parallels/catkin_where_am_i/install/env.sh")
+   "/home/parallels/catkin_map_my_world/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/parallels/catkin_where_am_i/install" TYPE PROGRAM FILES "/home/parallels/catkin_where_am_i/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/parallels/catkin_map_my_world/install" TYPE PROGRAM FILES "/home/parallels/catkin_map_my_world/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/parallels/catkin_where_am_i/install/setup.bash;/home/parallels/catkin_where_am_i/install/local_setup.bash")
+   "/home/parallels/catkin_map_my_world/install/setup.bash;/home/parallels/catkin_map_my_world/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/parallels/catkin_where_am_i/install" TYPE FILE FILES
-    "/home/parallels/catkin_where_am_i/build/catkin_generated/installspace/setup.bash"
-    "/home/parallels/catkin_where_am_i/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/parallels/catkin_map_my_world/install" TYPE FILE FILES
+    "/home/parallels/catkin_map_my_world/build/catkin_generated/installspace/setup.bash"
+    "/home/parallels/catkin_map_my_world/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/parallels/catkin_where_am_i/install/setup.sh;/home/parallels/catkin_where_am_i/install/local_setup.sh")
+   "/home/parallels/catkin_map_my_world/install/setup.sh;/home/parallels/catkin_map_my_world/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/parallels/catkin_where_am_i/install" TYPE FILE FILES
-    "/home/parallels/catkin_where_am_i/build/catkin_generated/installspace/setup.sh"
-    "/home/parallels/catkin_where_am_i/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/parallels/catkin_map_my_world/install" TYPE FILE FILES
+    "/home/parallels/catkin_map_my_world/build/catkin_generated/installspace/setup.sh"
+    "/home/parallels/catkin_map_my_world/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/parallels/catkin_where_am_i/install/setup.zsh;/home/parallels/catkin_where_am_i/install/local_setup.zsh")
+   "/home/parallels/catkin_map_my_world/install/setup.zsh;/home/parallels/catkin_map_my_world/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/parallels/catkin_where_am_i/install" TYPE FILE FILES
-    "/home/parallels/catkin_where_am_i/build/catkin_generated/installspace/setup.zsh"
-    "/home/parallels/catkin_where_am_i/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/parallels/catkin_map_my_world/install" TYPE FILE FILES
+    "/home/parallels/catkin_map_my_world/build/catkin_generated/installspace/setup.zsh"
+    "/home/parallels/catkin_map_my_world/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/parallels/catkin_where_am_i/install/.rosinstall")
+   "/home/parallels/catkin_map_my_world/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/parallels/catkin_where_am_i/install" TYPE FILE FILES "/home/parallels/catkin_where_am_i/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/parallels/catkin_map_my_world/install" TYPE FILE FILES "/home/parallels/catkin_map_my_world/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/parallels/catkin_where_am_i/build/gtest/cmake_install.cmake")
-  include("/home/parallels/catkin_where_am_i/build/my_robot/cmake_install.cmake")
-  include("/home/parallels/catkin_where_am_i/build/teleop_twist_keyboard/cmake_install.cmake")
+  include("/home/parallels/catkin_map_my_world/build/gtest/cmake_install.cmake")
+  include("/home/parallels/catkin_map_my_world/build/my_robot/cmake_install.cmake")
+  include("/home/parallels/catkin_map_my_world/build/teleop_twist_keyboard/cmake_install.cmake")
 
 endif()
 
@@ -144,5 +144,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/parallels/catkin_where_am_i/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/parallels/catkin_map_my_world/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
