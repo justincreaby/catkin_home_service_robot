@@ -1,8 +1,0 @@
-prefix=/home/parallels/catkin_map_my_world/devel
-
-Name: teleop_twist_keyboard
-Description: Description of teleop_twist_keyboard
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

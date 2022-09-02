@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <launch>
   <!-- Map Server -->
-  <arg name="map_file" default="$(find my_robot)/maps/justinMap.yaml"/>
+  <!--arg name="map_file" default="$(find my_robot)/maps/justinMap.yaml"/-->
+  <arg name="map_file" default="$(find my_robot)/maps/home_service_robot_map.yaml"/>
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
   <!-- AMCL Node -->
@@ -17,6 +18,7 @@
     <!-- If you choose to define initial pose here -->
     <param name="initial_pose_x" value="0"/>
     <param name="initial_pose_y" value="0"/>
+    <param name="initial_pose_a" value="1.5707"/>
     
     <!-- Tune parameters-->
     <param name="transform_tolerance" value="0.2"/>
