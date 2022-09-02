@@ -1,3 +1,6 @@
 [submodule "src/teleop_twist_keyboard"]
 	path = src/teleop_twist_keyboard
 	url = https://github.com/ros-teleop/teleop_twist_keyboard.git
+[submodule "src/slam_gmapping"]
+	path = src/slam_gmapping
+	url = https://github.com/ros-perception/slam_gmapping.git

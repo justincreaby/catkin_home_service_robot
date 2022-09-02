@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/parallels/catkin_home_service_robot/devel/setup.sh
