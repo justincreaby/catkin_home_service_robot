@@ -1,7 +1,0 @@
-
-To get gmapping to work, I had to run it with the following command:
-
-   rosrun gmapping slam_gmapping scan:=scan _base_frame:=odom
-
-
-
