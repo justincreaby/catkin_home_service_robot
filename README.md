@@ -15,7 +15,7 @@ Created a pick_objects package that sends a pick up and drop off goal for the ro
 **add_marker.sh**
 Created an add_marker.sh to emulate a package at the pick up and drop off points. The package behavior is linked to the robot position. i.e. it disappears when leaving the pick up goal and reappears when reaching the drop off goal.
 
-**home_service**
+**home_service.sh**
 Combines all features into a final .sh script.
 
 
