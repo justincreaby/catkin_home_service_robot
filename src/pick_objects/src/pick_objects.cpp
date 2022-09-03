@@ -1,6 +1,7 @@
 #include <ros/ros.h>
 #include <move_base_msgs/MoveBaseAction.h>
 #include <actionlib/client/simple_action_client.h>
+#include <std_msgs/UInt8.h>
 
 // Define a client for to send goal requests to the move_base server through a SimpleActionClient
 typedef actionlib::SimpleActionClient<move_base_msgs::MoveBaseAction> MoveBaseClient;
@@ -12,12 +13,18 @@ int main(int argc, char** argv){
   //tell the action client that we want to spin a thread by default
   MoveBaseClient ac("move_base", true);
 
+  //set up publisher to broadcast if robot is at goal marker
+  ros::NodeHandle n;
+  ros::Publisher goal_reach_pub = n.advertise<std_msgs::UInt8>("/goal_reached", 1);
+
+
   // Wait 5 sec for move_base action server to come up
   while(!ac.waitForServer(ros::Duration(5.0))){
     ROS_INFO("Waiting for the move_base action server to come up");
   }
 
   move_base_msgs::MoveBaseGoal goal;
+  std_msgs::UInt8 status_msg;  // goal reach status
 
   // set up the frame parameters
   goal.target_pose.header.frame_id = "map";
@@ -44,6 +51,8 @@ int main(int argc, char** argv){
   ROS_INFO("Waiting 5 seconds at the pickup zone");
   ros::Duration(5.0).sleep();
   ROS_INFO("Done waiting, moving to drop off zone");
+  status_msg.data = 1;
+  goal_reach_pub.publish(status_msg); // pickup
 
   // Define a position and orientation for the robot to reach
   goal.target_pose.pose.position.x = -1.5;
@@ -64,6 +73,8 @@ int main(int argc, char** argv){
   else
     ROS_INFO("The base failed to move forward 1 meter for some reason");
   
+  status_msg.data = 2;
+  goal_reach_pub.publish(status_msg); // dropoff
   ROS_INFO("Waiting 5 seconds at the drop off zone");
   ros::Duration(5.0).sleep();
   ROS_INFO("Done");

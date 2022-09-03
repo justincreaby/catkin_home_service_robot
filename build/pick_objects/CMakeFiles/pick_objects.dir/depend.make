@@ -92,6 +92,7 @@ pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/noetic
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/noetic/include/ros/wall_timer_options.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/noetic/include/rosconsole/macros_generated.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/noetic/include/std_msgs/Header.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/noetic/include/std_msgs/UInt8.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 

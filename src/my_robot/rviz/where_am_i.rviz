@@ -10,6 +10,7 @@ Panels:
         - /Path1
         - /Map2
         - /Map3
+        - /Marker1
       Splitter Ratio: 0.5
     Tree Height: 241
   - Class: rviz/Selection
@@ -170,6 +171,7 @@ Visualization Manager:
       Unreliable: false
       Value: false
       Visibility:
+        "": true
         Camera: true
         Grid: true
         LaserScan: true
@@ -192,6 +194,7 @@ Visualization Manager:
       Unreliable: false
       Value: false
       Visibility:
+        "": true
         Camera: true
         Grid: true
         LaserScan: true
@@ -291,6 +294,14 @@ Visualization Manager:
       Unreliable: false
       Use Timestamp: false
       Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /visualization_marker
+      Name: Marker
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -319,7 +330,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 15.961618423461914
+      Distance: 31.143733978271484
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1

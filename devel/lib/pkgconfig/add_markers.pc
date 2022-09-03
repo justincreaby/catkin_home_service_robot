@@ -1,0 +1,8 @@
+prefix=/home/parallels/catkin_home_service_robot/devel
+
+Name: add_markers
+Description: Description of add_markers
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

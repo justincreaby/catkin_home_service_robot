@@ -134,6 +134,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/parallels/catkin_home_service_robot/build/my_robot/cmake_install.cmake")
   include("/home/parallels/catkin_home_service_robot/build/slam_gmapping/slam_gmapping/cmake_install.cmake")
   include("/home/parallels/catkin_home_service_robot/build/teleop_twist_keyboard/cmake_install.cmake")
+  include("/home/parallels/catkin_home_service_robot/build/add_markers/cmake_install.cmake")
   include("/home/parallels/catkin_home_service_robot/build/pick_objects/cmake_install.cmake")
   include("/home/parallels/catkin_home_service_robot/build/slam_gmapping/gmapping/cmake_install.cmake")
 
