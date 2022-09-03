@@ -31,6 +31,6 @@ Combines all features into a final .sh script.
 
 ![plot](Screenshots/Dropoff.png)
 
-**Movie**
-![plot](Gif/functioningHomeServiceRobot.gif)
+**Gif of functioning robot**
+![alt-text](Gif/functioningHomeServiceRobot.gif)
 -----------
