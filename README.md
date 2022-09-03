@@ -18,7 +18,12 @@ Created an add_marker.sh to emulate a package at the pick up and drop off points
 **home_service**
 Combines all features into a final .sh script.
 
-Drop Off Point
+
+**After Pick Up, On Way To Drop Off Point**
+
+![plot](Screenshots/LeftPickUpOnWayToDrop.png)
+
+**Drop Off Point**
 
 ![plot](Screenshots/Dropoff.png)
 
